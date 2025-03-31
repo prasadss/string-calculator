@@ -19,3 +19,7 @@ test('returns sum of multiple numbers seperated by ","', () => {
 test("handles new line as delimiter", () => {
   expect(add("1\n2,3")).toBe(6);
 });
+
+test("handles custom delimiter", () => {
+  expect(add("//+\n1+2")).toBe(3);
+});
