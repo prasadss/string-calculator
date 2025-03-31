@@ -11,3 +11,7 @@ test("returns the number itself if only one number is provided", () => {
 test("returns sum of two numbers", () => {
   expect(add("1,2")).toBe(3);
 });
+
+test('returns sum of multiple numbers seperated by ","', () => {
+  expect(add("1,2,3,4")).toBe(10);
+});
